@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #308c05;
+                color: white;
+                padding: 10px 16px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                font-size: .9rem;
+                font-weight: 700;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+
+            .canceel_button {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+
+            .logo {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            .user {
+                width: 40%;
+                border-radius: 50%;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            span .password {
+                float: right;
+                padding-top: 16px;
+            }
+
+
+            .form-container {
+                margin: auto;
+                max-width: 500px;
+                height: 70vh;
+                padding: 20px; 
+            }
+
+            .other_items {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="form-container">
+            <form class="form" method="post">
+                <div class="logo">
+                    <img src="user-lady.png" alt="user image" class="user">
+                </div>
+
+                <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    
+                <button type="submit">Login</button>
+                    <label for="remember">
+                        <input type="checkbox" id="remember" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="other_items container" style="background-color:#f1f1f1">
+                    <button type="button" class="canceel_button ">Cancel</button>
+                    <span class="password">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>
